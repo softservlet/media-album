@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * @version 1.0
  */
 
-class AlbumDB extends Model
+class AlbumDB extends Model 
 {
 	//database table
 	protected $table = 'albums';
@@ -19,7 +19,7 @@ class AlbumDB extends Model
 	//relationship to objects
 	public function objects()
 	{
-		return $this->belongsToMany('Softservlet\MediaAlbum\Laravel\ORM\MediaObject');
+		return $this->belongsToMany('Softservlet\MediaAlbum\Laravel\ORM\MediaObjectDB','albums_media_objects','album_id','media_object_id');
 	}
 }
 

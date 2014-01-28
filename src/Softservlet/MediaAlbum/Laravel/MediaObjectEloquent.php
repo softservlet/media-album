@@ -42,7 +42,7 @@ class MediaObjectEloquent implements MediaObjectInterface
 	public function uri()
 	{
 		return $this->orm->uri;	
-	{
+	}
 
 }
 

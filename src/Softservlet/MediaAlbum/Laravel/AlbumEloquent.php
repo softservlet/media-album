@@ -1,5 +1,6 @@
 <?php namespace Softservlet\MediaAlbum\Laravel;
 
+use Softservlet\MediaAlbum\MediaObjectInterface;
 use Softservlet\MediaAlbum\AlbumInterface;
 use Softservlet\MediaAlbum\Laravel\ORM\AlbumDB;
 
@@ -9,7 +10,7 @@ use Softservlet\MediaAlbum\Laravel\ORM\AlbumDB;
  * @version 1.0
  */
 
-class AlbumEloquent implements AlbumInterface;
+class AlbumEloquent implements AlbumInterface
 {
 	/**
 	 * @brief AlbumDB instance
@@ -49,11 +50,13 @@ class AlbumEloquent implements AlbumInterface;
 	 *
 	 * @param MediaObjectInterface
 	 * 
-	 * @return void
+	 * @return the added object
 	 */
 	public function addObject(MediaObjectInterface $object)
 	{
 		$this->orm->objects()->attach($object->getId());
+
+		return $object;
 	}	
 
 	/**
