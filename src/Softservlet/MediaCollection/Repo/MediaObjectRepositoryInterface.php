@@ -15,6 +15,14 @@ interface MediaObjectRepositoryInterface
 	 */
 	public function byId($id);
 	
+	/**
+	 * @brief get media objects by album id
+	 * 
+	 * @param int album id
+	 * @param int limit
+	 * @param int offset
+	 */
+	public function byAlbumId($id, $limit = 0, $offset = 0);
 	
 	/**
 	 * @brief create new media object

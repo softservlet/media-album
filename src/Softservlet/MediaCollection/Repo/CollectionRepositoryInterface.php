@@ -16,14 +16,7 @@ interface CollectionRepositoryInterface
 	 * @return CollectionInterface collection
 	 */
 	public function byId($id);
-	
-	/**
-	 * @brief return the media objects that belongs to this collection
-	 * 
-	 * @return Array<MediaObjectInterface>
-	 */
-	public function getObjects();
-	
+
 	/**
 	 * @brief create a new collection
 	 *
