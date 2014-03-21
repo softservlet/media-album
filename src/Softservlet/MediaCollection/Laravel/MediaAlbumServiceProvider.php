@@ -1,9 +1,9 @@
-<?php namespace Softservlet\MediaAlbum\Laravel;
+<?php namespace Softservlet\MediaCollection\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
 
-class MediaAlbumServiceProvider extends ServiceProvider {
+class MediaCollectionServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -29,12 +29,12 @@ class MediaAlbumServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('Softservlet\MediaAlbum\Repo\AlbumRepositoryInterface', function($app)
+		$this->app->bind('Softservlet\MediaCollection\Repo\AlbumRepositoryInterface', function($app)
 		{
 				return new Repo\AlbumRepositoryEloquent(new ORM\AlbumDB);
 		});
 
-		$this->app->bind('Softservlet\MediaAlbum\Repo\MediaObjectRepositoryInterface', function($app)
+		$this->app->bind('Softservlet\MediaCollection\Repo\MediaObjectRepositoryInterface', function($app)
 		{
 				return new Repo\MediaObjectRepositoryEloquent(new ORM\MediaObjectDB); 
 		});

@@ -1,4 +1,4 @@
-<?php namespace Softservlet\MediaAlbum\Laravel\ORM;
+<?php namespace Softservlet\MediaCollection\Laravel\ORM;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,7 +19,7 @@ class AlbumDB extends Model
 	//relationship to objects
 	public function objects()
 	{
-		return $this->belongsToMany('Softservlet\MediaAlbum\Laravel\ORM\MediaObjectDB','albums_media_objects','album_id','media_object_id');
+		return $this->belongsToMany('Softservlet\MediaCollection\Laravel\ORM\MediaObjectDB','albums_media_objects','album_id','media_object_id');
 	}
 }
 

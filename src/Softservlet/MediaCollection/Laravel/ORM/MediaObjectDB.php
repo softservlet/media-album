@@ -1,4 +1,4 @@
-<?php namespace Softservlet\MediaAlbum\Laravel\ORM;
+<?php namespace Softservlet\MediaCollection\Laravel\ORM;
 
 use Illuminate\Database\Eloquent\Model;
 

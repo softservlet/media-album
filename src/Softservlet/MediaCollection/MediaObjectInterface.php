@@ -1,4 +1,4 @@
-<?php namespace Softservlet\MediaAlbum;
+<?php namespace Softservlet\MediaCollection;
 
 use Softservlet\FileManager\File\FileInterface;
 

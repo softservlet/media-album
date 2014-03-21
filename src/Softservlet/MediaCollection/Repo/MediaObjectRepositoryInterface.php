@@ -1,4 +1,4 @@
-<?php namespace Softservlet\MediaAlbum\Repo;
+<?php namespace Softservlet\MediaCollection\Repo;
 
 /**
  * @author Marius Leustean <marius@softservlet.com>

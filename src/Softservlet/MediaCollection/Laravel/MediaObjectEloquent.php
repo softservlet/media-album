@@ -1,7 +1,7 @@
-<?php namespace Softservlet\MediaAlbum\Laravel;
+<?php namespace Softservlet\MediaCollection\Laravel;
 
-use Softservlet\MediaAlbum\MediaObjectInterface;
-use Softservlet\MediaAlbum\Laravel\ORM\MediaObjectDB;
+use Softservlet\MediaCollection\MediaObjectInterface;
+use Softservlet\MediaCollection\Laravel\ORM\MediaObjectDB;
 
 /**
  * @author Marius Leustean <marius@softservlet.com>

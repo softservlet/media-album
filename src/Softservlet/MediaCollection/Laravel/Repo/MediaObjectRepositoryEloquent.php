@@ -1,8 +1,8 @@
-<?php namespace Softservlet\MediaAlbum\Laravel\Repo;
+<?php namespace Softservlet\MediaCollection\Laravel\Repo;
 
-use Softservlet\MediaAlbum\Repo\MediaObjectRepositoryInterface;
-use Softservlet\MediaAlbum\Laravel\ORM\MediaObjectDB;
-use Softservlet\MediaAlbum\Laravel\MediaObjectEloquent;
+use Softservlet\MediaCollection\Repo\MediaObjectRepositoryInterface;
+use Softservlet\MediaCollection\Laravel\ORM\MediaObjectDB;
+use Softservlet\MediaCollection\Laravel\MediaObjectEloquent;
 
 /**
  * @author Marius Leustean <marius@softservlet.com>
