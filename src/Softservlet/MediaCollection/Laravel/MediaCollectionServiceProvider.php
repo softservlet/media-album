@@ -19,7 +19,7 @@ class MediaCollectionServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('softservlet/media-album');
+		$this->package('softservlet/media-collection');
 	}
 
 	/**
@@ -29,9 +29,9 @@ class MediaCollectionServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('Softservlet\MediaCollection\Repo\AlbumRepositoryInterface', function($app)
+		$this->app->bind('Softservlet\MediaCollection\Repo\CollectionRepositoryInterface', function($app)
 		{
-				return new Repo\AlbumRepositoryEloquent(new ORM\AlbumDB);
+				return new Repo\CollectionRepositoryEloquent(new ORM\CollectionDB);
 		});
 
 		$this->app->bind('Softservlet\MediaCollection\Repo\MediaObjectRepositoryInterface', function($app)

@@ -14,7 +14,8 @@ interface MediaObjectRepositoryInterface
 	 * @return array of MediaObjectInterface
 	 */
 	public function byId($id);
-
+	
+	
 	/**
 	 * @brief create new media object
 	 *

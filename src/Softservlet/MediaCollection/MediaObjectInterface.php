@@ -16,4 +16,5 @@ interface MediaObjectInterface extends FileInterface
 	 * @return string|int id
 	 */
 	public function getId();
+
 }

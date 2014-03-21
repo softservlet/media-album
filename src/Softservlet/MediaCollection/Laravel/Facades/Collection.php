@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class Album extends Facade
+class Collection extends Facade
 {
 	public static function getFacadeAccessor()
 	{
-		return 'Softservlet\MediaCollection\Repo\AlbumRepositoryInterface';
+		return 'Softservlet\MediaCollection\Repo\CollectionRepositoryInterface';
 	}
 }

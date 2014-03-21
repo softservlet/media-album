@@ -1,8 +1,8 @@
 <?php namespace Softservlet\MediaCollection\Laravel;
 
 use Softservlet\MediaCollection\MediaObjectInterface;
-use Softservlet\MediaCollection\AlbumInterface;
-use Softservlet\MediaCollection\Laravel\ORM\AlbumDB;
+use Softservlet\MediaCollection\CollectionInterface;
+use Softservlet\MediaCollection\Laravel\ORM\CollectionDB;
 
 /**
  * @author Marius Leustean <marius@softservlet.com>
@@ -10,23 +10,23 @@ use Softservlet\MediaCollection\Laravel\ORM\AlbumDB;
  * @version 1.0
  */
 
-class AlbumEloquent implements AlbumInterface
+class CollectionEloquent implements CollectionInterface
 {
 	/**
-	 * @brief AlbumDB instance
+	 * @brief CollectionDB instance
 	 *
-	 * @var AlbumDB
+	 * @var CollectionDB
 	 */
 	protected $orm;
 	
 	
-	public function __construct(AlbumDB $orm)
+	public function __construct(CollectionDB $orm)
 	{
 		$this->orm = $orm;
 	}	
 
 	/**
-	 * @brief get the album name
+	 * @brief get the collection name
 	 *
 	 * @return string
 	 */
@@ -36,9 +36,9 @@ class AlbumEloquent implements AlbumInterface
 	}	
 
 	/**
-	 * @brief get the album id
+	 * @brief get the collection id
 	 *
-	 * @return int|string album id
+	 * @return int|string collection id
 	 */
 	public function getId()
 	{
@@ -46,7 +46,7 @@ class AlbumEloquent implements AlbumInterface
 	}
 
 	/**
-	 * @brief add a new media object to album
+	 * @brief add a new media object to collection
 	 *
 	 * @param MediaObjectInterface
 	 * 
@@ -60,7 +60,7 @@ class AlbumEloquent implements AlbumInterface
 	}	
 
 	/**
-	 * @brif get all media objects that belongs to this album
+	 * @brif get all media objects that belongs to this collection
 	 * 
 	 * @return Array<MediaObjectInterface>
 	 */
